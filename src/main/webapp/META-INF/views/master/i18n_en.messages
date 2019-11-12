@@ -54,6 +54,7 @@ master.menu.authenticated.offer = Offers
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
+master.menu.provider.request = Create request
 
 # master.menu.consumer ##########################################################
 
