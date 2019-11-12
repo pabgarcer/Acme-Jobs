@@ -21,6 +21,6 @@ authenticated.offer.form.label.create = Crear
 authenticated.offer.list.label.title = Titulo
 authenticated.offer.list.label.deadline = Fecha limite
 
-authenticated.offer.error.deadline = La fecha limite tiene que estar en futuro
+authenticated.offer.error.deadline = La fecha limite debe estar en futuro
 authenticated.offer.error.duplicated = La etiqueta ya existe
 authenticated.offer.error.range-money = La recompensa maxima tiene que ser mayor que la recompensa minima
