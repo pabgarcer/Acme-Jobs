@@ -30,10 +30,13 @@ public class AuthenticatedOfferController extends AbstractController<Authenticat
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedOfferListService	listService;
+	AuthenticatedOfferListService	listService;
 
 	@Autowired
-	private AuthenticatedOfferShowService	showService;
+	AuthenticatedOfferShowService	showService;
+
+	@Autowired
+	AuthenticatedOfferCreateService	createService;
 
 	// Constructors -----------------------------------------------------------
 
@@ -42,6 +45,7 @@ public class AuthenticatedOfferController extends AbstractController<Authenticat
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 
 }

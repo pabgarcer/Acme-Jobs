@@ -7,7 +7,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -55,15 +54,5 @@ public class Offer extends DomainEntity {
 	@NotBlank
 	@Column(unique = true)
 	private String				ticker;
-
-
-	@Transient
-	public String rangeMoney() {
-		StringBuilder res = new StringBuilder();
-		res.append(this.maxMoney);
-		res.append(" - ");
-		res.append(this.minMoney);
-		return res.toString();
-	}
 
 }

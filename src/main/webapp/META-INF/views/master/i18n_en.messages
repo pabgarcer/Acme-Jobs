@@ -59,6 +59,7 @@ master.menu.provider.request = Create request
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
+master.menu.consumer.offer = Create offer
 
 # master.menu.user-account ####################################################
 

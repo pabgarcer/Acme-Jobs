@@ -18,5 +18,4 @@
 <acme:list readonly = "false">
 	<acme:list-column code="authenticated.offer.list.label.title" path="title" width="40%"/>
 	<acme:list-column code="authenticated.offer.list.label.deadline" path="deadline" width="30%"/>	
-	<acme:list-column code="authenticated.offer.list.label.rangeMoney" path="rangeMoney" width="30%"/>
 </acme:list>
