@@ -37,11 +37,8 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 	@Override
 	public boolean authorise(final Request<Offer> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override
@@ -49,8 +46,6 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		model.setAttribute("rangeMoney", entity.rangeMoney());
 
 		request.unbind(entity, model, "title", "deadline");
 	}

@@ -18,4 +18,6 @@ public interface AuthenticatedRequestRepository extends AbstractRepository {
 	@Query("select a from Requests a where now()<=a.deadline")
 	Collection<Requests> findManyAll();
 
+	@Query("select ticker from Requests a")
+	Collection<String> findTickers();
 }
