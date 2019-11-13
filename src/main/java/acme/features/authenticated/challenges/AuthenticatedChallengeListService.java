@@ -22,11 +22,8 @@ public class AuthenticatedChallengeListService implements AbstractListService<Au
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override

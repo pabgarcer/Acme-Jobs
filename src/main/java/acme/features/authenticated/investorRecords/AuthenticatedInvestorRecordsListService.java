@@ -37,11 +37,8 @@ public class AuthenticatedInvestorRecordsListService implements AbstractListServ
 	@Override
 	public boolean authorise(final Request<InvestorRecords> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override
