@@ -22,11 +22,7 @@ public class AdministratorAnnouncementListService implements AbstractListService
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Administrator.class)) {
-			res = true;
-		}
-		return res;
+		return true;
 	}
 
 	@Override

@@ -8,7 +8,6 @@ import acme.entities.challenges.Challenge;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
-import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -21,11 +20,8 @@ public class AdministratorChallengeShowService implements AbstractShowService<Ad
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override
