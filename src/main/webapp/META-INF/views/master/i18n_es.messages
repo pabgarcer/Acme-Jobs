@@ -33,6 +33,7 @@ master.menu.anonymous.list-announcement = Anuncios
 master.menu.anonymous.list.company-record = Compañías
 master.menu.anonymous.InvestorRecods = Inversores
 
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
@@ -40,6 +41,8 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-announcement = Todos los anuncios
 master.menu.administrator.spam = Parámetros de customización
+master.menu.administrator.InvestorRecods = Inversores
+master.menu.administrator.CreateInvestorRecods = Crear inversor
 
 # master.menu.authenticated ########################################################
 
