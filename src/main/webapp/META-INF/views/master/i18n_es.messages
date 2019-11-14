@@ -44,6 +44,8 @@ master.menu.administrator.spam = Parámetros de customización
 master.menu.administrator.create-announcement = Crear anuncio
 master.menu.administrator.CreateInvestorRecods = Crear inversor
 master.menu.administrator.challenge-create = Crear reto
+master.menu.administrator.InvestorRecods = Inversores
+master.menu.administrator.challenge-list = Retos
 
 # master.menu.authenticated ########################################################
 

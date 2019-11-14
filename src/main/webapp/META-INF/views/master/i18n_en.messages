@@ -43,6 +43,8 @@ master.menu.administrator.create-announcement = Create announcement
 master.menu.administrator.spam = Customisation parameters
 master.menu.administrator.CreateInvestorRecods = Create investor
 master.menu.administrator.challenge-create = Create challenge
+master.menu.administrator.InvestorRecods = Investors
+master.menu.administrator.challenge-list = Challenges
 
 # master.menu.authenticated ########################################################
 
