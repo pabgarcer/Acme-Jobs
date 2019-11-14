@@ -35,6 +35,9 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.InvestorRecods" action="/administrator/investor-records/list"/>
+			<acme:menu-suboption code="master.menu.administrator.CreateInvestorRecods" action="/administrator/investor-records/create"/>
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-list" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-create" action="/administrator/challenge/create"/>
 		</acme:menu-option>
