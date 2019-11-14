@@ -39,6 +39,7 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-announcement = Todos los anuncios
+master.menu.administrator.create-announcement = Crear anuncio
 master.menu.administrator.spam = Parámetros de customización
 master.menu.administrator.challenge-list = Retos
 master.menu.administrator.challenge-create = Crear reto
