@@ -1,4 +1,3 @@
-
 package acme.entities.announcements;
 
 import java.util.Date;
