@@ -15,6 +15,7 @@ authenticated.offer.form.label.text = Texto
 authenticated.offer.form.label.ticker = Etiqueta
 authenticated.offer.form.label.minMoney = Recompensa minina
 authenticated.offer.form.label.maxMoney = Recompensa maxima
+authenticated.offer.form.label.accept = Acepto la licencia
 authenticated.offer.form.button.return = Volver
 authenticated.offer.form.label.create = Crear
 
@@ -24,3 +25,4 @@ authenticated.offer.list.label.deadline = Fecha limite
 authenticated.offer.error.deadline = La fecha limite debe estar en futuro
 authenticated.offer.error.duplicated = La etiqueta ya existe
 authenticated.offer.error.range-money = La recompensa maxima tiene que ser mayor que la recompensa minima
+authenticated.offer.error.must-accept = Debe aceptar la licencia

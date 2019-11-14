@@ -26,6 +26,10 @@
 	<acme:form-money code="authenticated.offer.form.label.maxMoney" path="maxMoney"/>
 	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker" placeholder="OXXXX-99999"/>
 	
+	<jstl:if test="${command == 'create'}">
+	<acme:form-checkbox code="authenticated.offer.form.label.accept" path="accept"/>
+	</jstl:if>
+	
 	<acme:form-submit test="${command == 'create'}" code="authenticated.offer.form.label.create" action="/authenticated/offer/create"/>
 	<acme:form-return code="authenticated.offer.form.button.return"/>
 </acme:form>

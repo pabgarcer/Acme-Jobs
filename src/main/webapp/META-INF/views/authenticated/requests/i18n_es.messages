@@ -15,6 +15,7 @@ authenticated.request.form.label.deadline = Fecha Limite
 authenticated.request.form.label.description = Descripcion
 authenticated.request.form.label.reward = Recompensa
 authenticated.request.form.label.ticker = Etiqueta
+authenticated.request.form.label.accept = Acepto la licencia
 authenticated.request.form.button.return = Volver
 authenticated.request.form.label.create = Crear
 
@@ -23,3 +24,4 @@ authenticated.request.list.label.deadline = Fecha limite
 
 authenticated.request.error.deadline = La fecha limite tiene que estar en futuro
 authenticated.request.error.duplicated = La etiqueta ya existe
+authenticated.request.error.must-accept = Debe aceptar la licencia

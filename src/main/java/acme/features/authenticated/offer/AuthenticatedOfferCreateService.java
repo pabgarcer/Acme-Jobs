@@ -44,6 +44,8 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert entity != null;
 		assert model != null;
 
+		model.setAttribute("accept", "false");
+
 		request.unbind(entity, model, "title", "deadline", "text", "ticker", "maxMoney", "minMoney");
 	}
 
@@ -61,6 +63,9 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		boolean isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 
 		Date dateNow = Date.from(Instant.now());
 		boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
