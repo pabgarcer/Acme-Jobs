@@ -20,11 +20,8 @@ public class AuthenticatedChallengeShowService implements AbstractShowService<Au
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override
@@ -33,11 +30,7 @@ public class AuthenticatedChallengeShowService implements AbstractShowService<Au
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("levelGOLD", entity.LevelGOLD());
-		model.setAttribute("levelSILVER", entity.LevelSILVER());
-		model.setAttribute("levelBRONZE", entity.LevelBRONZE());
-
-		request.unbind(entity, model, "title", "deadline", "description");
+		request.unbind(entity, model, "title", "deadline", "description", "goalGOLD", "goalSILVER", "goalBRONZE", "rewardGOLD", "rewardSILVER", "rewardBRONZE");
 
 	}
 

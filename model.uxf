@@ -406,77 +406,8 @@ Challenge
 + goalBRONZE: String {NotBlank}
 + rewardGOLD: Money {Valid}
 + rewardSILVER: Money {Valid}
-+ rewardBRONZE: Money {Valid}
-+ /LevelGOLD: String {Transient}
-+ /LevelSILVER: String {Transient}
-+ /LevelBRONZE: String {Transient}</panel_attributes>
++ rewardBRONZE: Money {Valid}</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>630</x>
-      <y>609</y>
-      <w>217</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>LevelGOLD = goalGOLD + " / " + rewardGOLD</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>637</x>
-      <y>686</y>
-      <w>245</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>LevelSILVER = goalSILVER + " / " + rewardSILVER</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>637</x>
-      <y>763</y>
-      <w>266</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>LevelBRONZE = goalBRONZE + " / " + rewardBRONZE</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>553</x>
-      <y>630</y>
-      <w>91</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;50.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>553</x>
-      <y>700</y>
-      <w>98</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>553</x>
-      <y>763</y>
-      <w>98</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;30.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -495,31 +426,8 @@ Offer
 + text: String {Not Blank}
 + minMoney: Money {Valid, NotNull}
 + maxMoney: Money {Valid, NotNull}
-+ ticker: String {Unique, Pattern("[O][A-Z]{4]-[0-9]{5}"), NotBlank}
-+ /rangeMoney: String {Transient}</panel_attributes>
++ ticker: String {Unique, Pattern("[O][A-Z]{4]-[0-9]{5}"), NotBlank}</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1085</x>
-      <y>385</y>
-      <w>217</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>rangeMoney = maxMoney + " - " + minMoney</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1036</x>
-      <y>392</y>
-      <w>63</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;30.0;70.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

@@ -31,10 +31,15 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.create-announcement" action="/administrator/announcement/create"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.InvestorRecods" action="/administrator/investor-records/list"/>
 			<acme:menu-suboption code="master.menu.administrator.CreateInvestorRecods" action="/administrator/investor-records/create"/>
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.challenge-list" action="/administrator/challenge/list"/>
+			<acme:menu-suboption code="master.menu.administrator.challenge-create" action="/administrator/challenge/create"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
@@ -51,6 +56,7 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
+			<acme:menu-suboption code="master.menu.consumer.offer" action="/authenticated/offer/create"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

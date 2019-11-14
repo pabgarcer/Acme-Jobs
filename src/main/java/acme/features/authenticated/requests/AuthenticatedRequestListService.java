@@ -22,11 +22,8 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 	@Override
 	public boolean authorise(final Request<Requests> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override
