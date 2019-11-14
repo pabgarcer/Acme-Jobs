@@ -16,6 +16,7 @@ authenticated.request.form.label.deadline = Deadline
 authenticated.request.form.label.description = Description
 authenticated.request.form.label.reward = Reward
 authenticated.request.form.label.ticker = Ticker
+authenticated.request.form.label.accept = I do accept the licence
 authenticated.request.form.button.return = Return
 authenticated.request.form.label.create = Create
 
@@ -24,3 +25,4 @@ authenticated.request.list.label.deadline = Deadline
 
 authenticated.request.error.deadline = Deadline must be in the future
 authenticated.request.error.duplicated = Ticker is already taken
+authenticated.request.error.must-accept = Must accept the licence
