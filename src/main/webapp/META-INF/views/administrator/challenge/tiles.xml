@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/spam/list" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/spam/list.jsp" />
+	<definition name="administrator/challenge/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/challenge/list.jsp" />
 	</definition>
 	
-	<definition name="administrator/spam/form" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/spam/form.jsp" />
+	<definition name="administrator/challenge/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/challenge/form.jsp" />
 	</definition>
 
 </tiles-definitions>

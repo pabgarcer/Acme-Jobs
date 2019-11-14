@@ -12,10 +12,15 @@ authenticated.offer.form.label.title = Title
 authenticated.offer.form.label.moment = Moment
 authenticated.offer.form.label.deadline = Deadline
 authenticated.offer.form.label.text = Text
-authenticated.offer.form.label.rangeMoney = Money
 authenticated.offer.form.label.ticker = Ticker
+authenticated.offer.form.label.minMoney = Minimum reward
+authenticated.offer.form.label.maxMoney = Maximum reward
 authenticated.offer.form.button.return = Return
+authenticated.offer.form.label.create = Create
 
 authenticated.offer.list.label.title = Title
 authenticated.offer.list.label.deadline = Deadline
-authenticated.offer.list.label.rangeMoney = Money
+
+authenticated.offer.error.deadline = Deadline must be in the future
+authenticated.offer.error.duplicated = Ticker is already taken
+authenticated.offer.error.range-money = Maximun reward has to be bigger than minimum reward

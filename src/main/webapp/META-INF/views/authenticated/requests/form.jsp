@@ -20,7 +20,7 @@
 	<jstl:if test="${command != 'create'}">
 	<acme:form-moment code="authenticated.request.form.label.moment" path="moment" readonly="true" />
 	</jstl:if>
-	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadline" placeholder="YYYY/MM/DD hh:mm" />
+	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadline" />
 	<acme:form-textarea code="authenticated.request.form.label.description" path="description" />
 	<acme:form-money code="authenticated.request.form.label.reward" path="reward" />
 	<acme:form-textbox code="authenticated.request.form.label.ticker" path="ticker" placeholder="RXXXX-99999"/>

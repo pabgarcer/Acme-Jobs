@@ -1,4 +1,4 @@
-# i18n_es.messages
+﻿# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -8,14 +8,19 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.offer.form.label.title = Título
+authenticated.offer.form.label.title = Titulo
 authenticated.offer.form.label.moment = Momento
-authenticated.offer.form.label.deadline = Fecha límite
+authenticated.offer.form.label.deadline = Fecha limite
 authenticated.offer.form.label.text = Texto
-authenticated.offer.form.label.rangeMoney = Dinero
 authenticated.offer.form.label.ticker = Etiqueta
+authenticated.offer.form.label.minMoney = Recompensa minina
+authenticated.offer.form.label.maxMoney = Recompensa maxima
 authenticated.offer.form.button.return = Volver
+authenticated.offer.form.label.create = Crear
 
-authenticated.offer.list.label.title = Título
-authenticated.offer.list.label.deadline = Fecha límite
-authenticated.offer.list.label.rangeMoney = Dinero
+authenticated.offer.list.label.title = Titulo
+authenticated.offer.list.label.deadline = Fecha limite
+
+authenticated.offer.error.deadline = La fecha limite debe estar en futuro
+authenticated.offer.error.duplicated = La etiqueta ya existe
+authenticated.offer.error.range-money = La recompensa maxima tiene que ser mayor que la recompensa minima
