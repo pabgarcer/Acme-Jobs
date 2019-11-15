@@ -40,6 +40,8 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-announcement = Todos los anuncios
 master.menu.administrator.spam = ParÃ¡metros de customizaciÃ³n
+master.menu.administrator.list-company-record = Compañías
+master.menu.administrator.create-company-record = Crear compañía
 
 # master.menu.authenticated ########################################################
 
