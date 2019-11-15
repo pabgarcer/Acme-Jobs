@@ -316,12 +316,5 @@
 		<property name= "maxMoney" value= "900€"/>
 		<property name= "ticker" value= "OOUYB-80671"/>
 	</bean>
-	
-	<!-- Customisation Parameters -->
-	
-	<bean id= "spam01" class= "acme.entities.spams.Spam">
-		<property name= "spam" value= "sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar, sexo, has ganado, millón de dólares"/>
-		<property name="threshold" value="1.0"/>
-	</bean>
 
 </beans>

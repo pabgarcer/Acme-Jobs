@@ -22,11 +22,8 @@ public class AdministratorSpamListService implements AbstractListService<Adminis
 	@Override
 	public boolean authorise(final Request<Spam> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Administrator.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override

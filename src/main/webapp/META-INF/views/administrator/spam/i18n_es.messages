@@ -8,5 +8,13 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.announcement.list.label.spam = Palabras spam
-administrator.announcement.list.label.threshold = Umbral
+administrator.spam.list.label.spam = Palabras spam
+administrator.spam.list.label.threshold = Umbral
+
+administrator.spam.form.label.spam = Palabras spam
+administrator.spam.form.label.threshold = Umbral
+
+
+administrator.spam.form.label.update = Actualizar
+authenticated.spam.form.button.return = Volver
+

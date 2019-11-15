@@ -26,11 +26,8 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
-		boolean res = false;
-		if (request.getPrincipal().hasRole(Authenticated.class)) {
-			res = true;
-		}
-		return res;
+
+		return true;
 	}
 
 	@Override

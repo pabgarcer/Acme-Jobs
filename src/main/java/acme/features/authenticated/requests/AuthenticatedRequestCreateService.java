@@ -1,6 +1,7 @@
 
 package acme.features.authenticated.requests;
 
+import java.time.Instant;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,8 @@ public class AuthenticatedRequestCreateService implements AbstractCreateService<
 		assert entity != null;
 		assert model != null;
 
+		model.setAttribute("accept", "false");
+
 		request.unbind(entity, model, "title", "deadline", "description", "reward", "ticker");
 
 	}
@@ -61,6 +64,16 @@ public class AuthenticatedRequestCreateService implements AbstractCreateService<
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		boolean isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "authenticated.request.error.must-accept");
+
+		Date dateNow = Date.from(Instant.now());
+		boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
+		errors.state(request, deadlineAfterNow, "deadline", "authenticated.request.error.deadline");
+
+		boolean isDuplicateTicker = this.repository.findTickers().contains(entity.getTicker());
+		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.request.error.duplicated");
 	}
 
 	@Override

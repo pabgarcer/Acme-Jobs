@@ -6,7 +6,6 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -52,36 +51,5 @@ public class Challenge extends DomainEntity {
 	@Valid
 	@NotNull
 	private Money				rewardBRONZE;
-
-
-	@Transient
-	public String LevelGOLD() {
-		StringBuilder res;
-		res = new StringBuilder();
-		res.append(this.goalGOLD);
-		res.append(" / ");
-		res.append(this.rewardGOLD);
-		return res.toString();
-	}
-
-	@Transient
-	public String LevelSILVER() {
-		StringBuilder res;
-		res = new StringBuilder();
-		res.append(this.goalSILVER);
-		res.append(" / ");
-		res.append(this.rewardSILVER);
-		return res.toString();
-	}
-
-	@Transient
-	public String LevelBRONZE() {
-		StringBuilder res;
-		res = new StringBuilder();
-		res.append(this.goalBRONZE);
-		res.append(" / ");
-		res.append(this.rewardBRONZE);
-		return res.toString();
-	}
 
 }
