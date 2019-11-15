@@ -1,4 +1,4 @@
-﻿# i18n_es.messages
+# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -46,6 +46,8 @@ master.menu.administrator.CreateInvestorRecods = Crear inversor
 master.menu.administrator.challenge-create = Crear reto
 master.menu.administrator.InvestorRecods = Inversores
 master.menu.administrator.challenge-list = Retos
+master.menu.administrator.list-company-record = Compa��as
+master.menu.administrator.create-company-record = Crear compa��a
 
 # master.menu.authenticated ########################################################
 
@@ -111,4 +113,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
+

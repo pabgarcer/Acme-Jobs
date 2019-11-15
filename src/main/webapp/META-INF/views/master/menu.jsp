@@ -36,9 +36,12 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.InvestorRecods" action="/administrator/investor-records/list"/>
 			<acme:menu-suboption code="master.menu.administrator.CreateInvestorRecods" action="/administrator/investor-records/create"/>
-     		<acme:menu-separator/>
+     	<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-list" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-create" action="/administrator/challenge/create"/>
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.administrator.list-company-record" action="/administrator/company-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-company-record" action="/administrator/company-record/create"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
@@ -74,4 +77,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-

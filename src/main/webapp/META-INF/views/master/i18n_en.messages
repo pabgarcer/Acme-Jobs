@@ -1,4 +1,4 @@
-﻿# i18n_en.messages
+# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -45,6 +45,8 @@ master.menu.administrator.CreateInvestorRecods = Create investor
 master.menu.administrator.challenge-create = Create challenge
 master.menu.administrator.InvestorRecods = Investors
 master.menu.administrator.challenge-list = Challenges
+master.menu.administrator.list-company-record = Companies
+master.menu.administrator.create-company-record = Create company
 
 # master.menu.authenticated ########################################################
 
