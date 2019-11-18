@@ -21,7 +21,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-announcement" action="/anonymous/announcement/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.list.company-record" action="/anonymous/company-record/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.InvestorRecods" action="/anonymous/investor-records/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.InvestorRecords" action="/anonymous/investor-records/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -33,9 +33,16 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.create-announcement" action="/administrator/announcement/create"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-commercial-banner" action="/administrator/commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-commercial-banner" action="/administrator/commercial-banner/create"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-non-commercial-banner" action="/administrator/non-commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-non-commercial-banner" action="/administrator/non-commercial-banner/create"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-list" action="/administrator/challenge/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.challenge-create" action="/administrator/challenge/create"/>
 		</acme:menu-option>
 		
