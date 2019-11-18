@@ -1,3 +1,4 @@
+
 <%--
 - menu.jsp
 -
@@ -21,7 +22,7 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-announcement" action="/anonymous/announcement/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.list.company-record" action="/anonymous/company-record/list"/>
-			<acme:menu-suboption code="master.menu.anonymous.investor-records" action="/anonymous/investor-records/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.InvestorRecods" action="/anonymous/investor-records/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -42,7 +43,6 @@
 			<acme:menu-suboption code="master.menu.administrator.challenge-create" action="/administrator/challenge/create"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
-		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-announcement" action="/authenticated/announcement/list"/>

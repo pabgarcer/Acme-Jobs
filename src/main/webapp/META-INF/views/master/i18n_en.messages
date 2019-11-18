@@ -1,4 +1,4 @@
-﻿# i18n_en.messages
+# i18n_en.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -31,7 +31,7 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.list-announcement = Announcements
 master.menu.anonymous.list.company-record = Companies
-master.menu.anonymous.investor-records = Investors
+master.menu.anonymous.InvestorRecods = Investors
 
 # master.menu.administrator ###################################################
 
@@ -40,13 +40,17 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-announcement = All announcements
 master.menu.administrator.create-announcement = Create announcement
+master.menu.administrator.spam = Customisation parameters
+master.menu.administrator.CreateInvestorRecods = Create investor
+master.menu.administrator.challenge-create = Create challenge
+master.menu.administrator.InvestorRecods = Investors
+master.menu.administrator.challenge-list = Challenges
+master.menu.administrator.list-company-record = Companies
+master.menu.administrator.create-company-record = Create company
 master.menu.administrator.list-commercial-banner = Commercial banners
 master.menu.administrator.create-commercial-banner = Create commercial banner
 master.menu.administrator.list-non-commercial-banner = Non commercial banners
 master.menu.administrator.create-non-commercial-banner = Create non commercial banner
-master.menu.administrator.spam = Customisation parameters
-master.menu.administrator.challenge-list = Challenges
-master.menu.administrator.challenge-create = Create challenge
 
 # master.menu.authenticated ########################################################
 

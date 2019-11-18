@@ -1,4 +1,4 @@
-﻿# i18n_es.messages
+# i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
 #
@@ -31,7 +31,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.list-announcement = Anuncios
 master.menu.anonymous.list.company-record = Compañías
-master.menu.anonymous.investor-records = Inversores
+master.menu.anonymous.InvestorRecods = Inversores
+
 
 # master.menu.administrator ###################################################
 
@@ -39,14 +40,18 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-announcement = Todos los anuncios
+master.menu.administrator.spam = Parámetros de customización
 master.menu.administrator.create-announcement = Crear anuncio
+master.menu.administrator.CreateInvestorRecods = Crear inversor
+master.menu.administrator.challenge-create = Crear reto
+master.menu.administrator.InvestorRecods = Inversores
+master.menu.administrator.challenge-list = Retos
+master.menu.administrator.list-company-record = Compa��as
+master.menu.administrator.create-company-record = Crear compa��a
 master.menu.administrator.list-commercial-banner = Banners comerciales
 master.menu.administrator.create-commercial-banner = Crear banner comercial
 master.menu.administrator.list-non-commercial-banner = Banners no comerciales
 master.menu.administrator.create-non-commercial-banner = Crear banner no comercial
-master.menu.administrator.spam = Parámetros de customización
-master.menu.administrator.challenge-list = Retos
-master.menu.administrator.challenge-create = Crear reto
 
 # master.menu.authenticated ########################################################
 
@@ -112,4 +117,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
