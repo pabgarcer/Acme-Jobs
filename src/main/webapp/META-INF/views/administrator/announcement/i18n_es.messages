@@ -20,7 +20,3 @@ administrator.announcement.form.button.return = Volver
 administrator.announcement.form.button.create = Crear
 administrator.announcement.form.button.delete = Eliminar
 administrator.announcement.form.button.update = Actualizar
-
-administrator.announcement.form.label.create = Crear
-administrator.announcement.form.label.update = Actualizar
-administrator.announcement.form.label.delete = Eliminar

@@ -48,6 +48,10 @@ master.menu.administrator.InvestorRecods = Inversores
 master.menu.administrator.challenge-list = Retos
 master.menu.administrator.list-company-record = Compa��as
 master.menu.administrator.create-company-record = Crear compa��a
+master.menu.administrator.list-commercial-banner = Banners comerciales
+master.menu.administrator.create-commercial-banner = Crear banner comercial
+master.menu.administrator.list-non-commercial-banner = Banners no comerciales
+master.menu.administrator.create-non-commercial-banner = Crear banner no comercial
 
 # master.menu.authenticated ########################################################
 
@@ -113,4 +117,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-

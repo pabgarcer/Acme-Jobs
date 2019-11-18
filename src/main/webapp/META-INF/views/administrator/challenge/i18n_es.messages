@@ -8,9 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.challenge.form.label.title = Titulo
-administrator.challenge.form.label.deadline = Fecha limite
-administrator.challenge.form.label.description = Descripcion
+administrator.challenge.form.label.title = Título
+administrator.challenge.form.label.deadline = Fecha límite
+administrator.challenge.form.label.description = Descripción
 administrator.challenge.form.label.goalGOLD = Objetivo oro
 administrator.challenge.form.label.goalSILVER = Objetivo plata
 administrator.challenge.form.label.goalBRONZE = Objetivo bronce
@@ -23,9 +23,9 @@ administrator.challenge.form.label.create = Crear
 administrator.challenge.form.label.update = Actualizar
 administrator.challenge.form.label.delete = Eliminar
 
-administrator.challenge.list.label.title = Titulo
-administrator.challenge.list.label.deadline = Fecha limite
+administrator.challenge.list.label.title = Título
+administrator.challenge.list.label.deadline = Fecha límite
 
-administrator.offer.error.deadline = La fecha limite debe estar en futuro
+administrator.offer.error.deadline = La fecha límite debe estar en futuro
 administrator.offer.error.range-money1 = La recompensa plata debe ser menor que la recompensa oro
 administrator.offer.error.range-money2 = La recompensa bronce debe ser menor que la recompensa plata
