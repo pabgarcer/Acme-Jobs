@@ -18,7 +18,7 @@
 <acme:form>
 	<acme:form-textbox code="administrator.commercial-banner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.commercial-banner.form.label.link" path="link"/>
-	<acme:form-textbox code="administrator.commercial-banner.form.label.credit-card" path="creditCard"/>
+	<acme:form-textbox code="administrator.commercial-banner.form.label.credit-card" path="creditCard" placeholder="1234 5678 9012 3456"/>
 	<jstl:if test="${command != 'create'}">
 	<img src="${picture}" vspace="20" height="200" width="300">
 	<acme:menu-separator/>

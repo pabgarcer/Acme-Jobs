@@ -31,7 +31,7 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.list-announcement = Anuncios
 master.menu.anonymous.list.company-record = Compañías
-master.menu.anonymous.InvestorRecods = Inversores
+master.menu.anonymous.investor-records = Inversores
 
 # master.menu.administrator ###################################################
 
