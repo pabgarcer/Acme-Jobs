@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.requests;
+package acme.features.consumer.offer;
 
 import java.time.Instant;
 import java.util.Date;
@@ -7,29 +7,29 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.requests.Requests;
+import acme.entities.offers.Offer;
+import acme.entities.roles.Consumer;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AuthenticatedRequestCreateService implements AbstractCreateService<Authenticated, Requests> {
+public class ConsumerOfferCreateService implements AbstractCreateService<Consumer, Offer> {
 
 	@Autowired
-	AuthenticatedRequestRepository repository;
+	ConsumerOfferRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Requests> request) {
+	public boolean authorise(final Request<Offer> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Requests> request, final Requests entity, final Errors errors) {
+	public void bind(final Request<Offer> request, final Offer entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -39,52 +39,58 @@ public class AuthenticatedRequestCreateService implements AbstractCreateService<
 	}
 
 	@Override
-	public void unbind(final Request<Requests> request, final Requests entity, final Model model) {
+	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
 		model.setAttribute("accept", "false");
 
-		request.unbind(entity, model, "title", "deadline", "description", "reward", "ticker");
+		request.unbind(entity, model, "title", "deadline", "text", "ticker", "maxMoney", "minMoney");
 	}
 
 	@Override
-	public Requests instantiate(final Request<Requests> request) {
+	public Offer instantiate(final Request<Offer> request) {
 		assert request != null;
 
-		Requests res = new Requests();
+		Offer res = new Offer();
 
 		return res;
 	}
 
 	@Override
-	public void validate(final Request<Requests> request, final Requests entity, final Errors errors) {
+	public void validate(final Request<Offer> request, final Offer entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
 		boolean isAccepted = request.getModel().getBoolean("accept");
-		errors.state(request, isAccepted, "accept", "authenticated.request.error.must-accept");
+		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 
 		if (!errors.hasErrors("deadline")) {
 			Date dateNow = Date.from(Instant.now());
 			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-			errors.state(request, deadlineAfterNow, "deadline", "authenticated.request.error.deadline");
+			errors.state(request, deadlineAfterNow, "deadline", "authenticated.offer.error.deadline");
 		}
 
 		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
-		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.request.error.duplicated");
+		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.offer.error.duplicated");
+
+		if (!errors.hasErrors("maxMoney") && !errors.hasErrors("minMoney")) {
+			boolean correctRange = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
+			errors.state(request, correctRange, "maxMoney", "authenticated.offer.error.range-money");
+		}
 	}
 
 	@Override
-	public void create(final Request<Requests> request, final Requests entity) {
+	public void create(final Request<Offer> request, final Offer entity) {
 		assert request != null;
 		assert entity != null;
 
 		Date moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
 		this.repository.save(entity);
+
 	}
 
 }
