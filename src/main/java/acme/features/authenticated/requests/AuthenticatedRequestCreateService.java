@@ -47,7 +47,6 @@ public class AuthenticatedRequestCreateService implements AbstractCreateService<
 		model.setAttribute("accept", "false");
 
 		request.unbind(entity, model, "title", "deadline", "description", "reward", "ticker");
-
 	}
 
 	@Override
@@ -68,11 +67,13 @@ public class AuthenticatedRequestCreateService implements AbstractCreateService<
 		boolean isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.request.error.must-accept");
 
-		Date dateNow = Date.from(Instant.now());
-		boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-		errors.state(request, deadlineAfterNow, "deadline", "authenticated.request.error.deadline");
+		if (!errors.hasErrors("deadline")) {
+			Date dateNow = Date.from(Instant.now());
+			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
+			errors.state(request, deadlineAfterNow, "deadline", "authenticated.request.error.deadline");
+		}
 
-		boolean isDuplicateTicker = this.repository.findTickers().contains(entity.getTicker());
+		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
 		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.request.error.duplicated");
 	}
 

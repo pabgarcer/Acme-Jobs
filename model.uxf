@@ -327,25 +327,6 @@ Announcement
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>798</x>
-      <y>364</y>
-      <w>238</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Request
---
-+ title: String {NotBlank}
-+ moment: Date {Tempotal(TIMESTAMP), Past}
-+ deadline: Date {Tempotal(TIMESTAMP)}
-+ description: String {NotBlank}
-+ reward: Money {NotNull, Valid}
-+ ticker: String {Unique, NotBlank, Pattern("[R][A-Z]{4}-[0-9]{5}")}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>560</x>
       <y>462</y>
       <w>168</w>
@@ -399,7 +380,7 @@ InvestorRecords
 Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP)}
++ deadline: Date {NotNull, Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + goalGOLD: String {NotBlank}
 + goalSILVER: String {NotBlank}
@@ -421,8 +402,8 @@ Challenge
 Offer
 --
 + title: String {Not Blank}
-+ moment: Date{Temporal(TIMESTAMP), Past}
-+ deadline: Date{Temporal(TIMESTAMP)}
++ moment: Date{NotNull, Temporal(TIMESTAMP), Past}
++ deadline: Date{NotNull, Temporal(TIMESTAMP)}
 + text: String {Not Blank}
 + minMoney: Money {Valid, NotNull}
 + maxMoney: Money {Valid, NotNull}
@@ -533,5 +514,24 @@ Banner
     <panel_attributes>lt=&lt;&lt;-
 extends</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>805</x>
+      <y>364</y>
+      <w>238</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Request
+--
++ title: String {NotBlank}
++ moment: Date {NotNull, Tempotal(TIMESTAMP), Past}
++ deadline: Date {NotNull, Tempotal(TIMESTAMP)}
++ description: String {NotBlank}
++ reward: Money {NotNull, Valid}
++ ticker: String {Unique, NotBlank, Pattern("[R][A-Z]{4}-[0-9]{5}")}</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

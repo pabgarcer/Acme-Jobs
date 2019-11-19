@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedAnnouncementRepository extends AbstractRepository {
 
-	@Query("select a from Announcement a where datediff(now(), a.moment)<=31")
+	@Query("select a from Announcement a")
 	Collection<Announcement> findMany();
 
 	@Query("select a from Announcement a where a.id = ?1")

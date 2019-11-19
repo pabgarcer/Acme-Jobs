@@ -19,12 +19,10 @@
 	<acme:form-textbox code="administrator.commercial-banner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.commercial-banner.form.label.link" path="link"/>
 	<acme:form-textbox code="administrator.commercial-banner.form.label.credit-card" path="creditCard" placeholder="1234 5678 9012 3456"/>
+	<acme:form-url code="administrator.commercial-banner.form.label.picture" path="picture"/>
 	<jstl:if test="${command != 'create'}">
 	<img src="${picture}" vspace="20" height="200" width="300">
 	<acme:menu-separator/>
-	</jstl:if>
-	<jstl:if test="${command == 'create'}">
-	<acme:form-url code="administrator.commercial-banner.form.label.picture" path="picture"/>
 	</jstl:if>
 	
 	<acme:form-submit test="${command == 'show'}"

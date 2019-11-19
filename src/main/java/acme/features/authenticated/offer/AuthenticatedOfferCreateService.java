@@ -67,15 +67,19 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		boolean isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 
-		Date dateNow = Date.from(Instant.now());
-		boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-		errors.state(request, deadlineAfterNow, "deadline", "authenticated.offer.error.deadline");
+		if (!errors.hasErrors("deadline")) {
+			Date dateNow = Date.from(Instant.now());
+			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
+			errors.state(request, deadlineAfterNow, "deadline", "authenticated.offer.error.deadline");
+		}
 
-		boolean isDuplicateTicker = this.repository.findTickers().contains(entity.getTicker());
+		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
 		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.offer.error.duplicated");
 
-		boolean correctRange = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
-		errors.state(request, correctRange, "maxMoney", "authenticated.offer.error.range-money");
+		if (!errors.hasErrors("maxMoney") && !errors.hasErrors("minMoney")) {
+			boolean correctRange = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
+			errors.state(request, correctRange, "maxMoney", "authenticated.offer.error.range-money");
+		}
 	}
 
 	@Override

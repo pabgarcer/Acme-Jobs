@@ -10,7 +10,7 @@
 
 administrator.investor-records.form.label.name = Nombre
 administrator.investor-records.form.label.sector = Sector
-administrator.investor-records.form.label.investingStatement = Estado de la investigaci�n
+administrator.investor-records.form.label.investingStatement = Declaración de inversión
 administrator.investor-records.form.label.stars = Estrellas
 
 administrator.investor-records.list.label.name = Nombre

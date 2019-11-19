@@ -24,6 +24,7 @@ public abstract class Banner extends DomainEntity {
 	private String				slogan;
 
 	@URL
+	@NotBlank
 	private String				link;
 
 }

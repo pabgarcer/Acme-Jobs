@@ -3,6 +3,9 @@ package acme.entities.spams;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -18,6 +21,8 @@ public class Spam extends DomainEntity {
 	@NotBlank
 	private String				spam;
 
+	@Range(min = 0, max = 100)
+	@NotNull
 	private double				threshold;
 
 
