@@ -12,9 +12,9 @@ administrator.company-record.list.label.incorporated = Nombre
 administrator.company-record.list.label.sector = Sector
 administrator.company-record.list.label.stars = Estrellas
 
-administrator.company-record.form.label.Nameincorporated = Nombre compañía
+administrator.company-record.form.label.Nameincorporated = Nombre compaÃ±Ã­a
 administrator.company-record.form.label.name = Nombre
-administrator.company-record.form.label.incorporated = Compañía incorporada
+administrator.company-record.form.label.incorporated = CompaÃ±Ã­a incorporada
 administrator.company-record.form.label.sector = Sector
 administrator.company-record.form.label.nameCEO = CEO
 administrator.company-record.form.label.activities = Actividades

@@ -30,8 +30,8 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Anonymous
 master.menu.anonymous.list-announcement = Announcements
-master.menu.anonymous.list.company-record = Companies
-master.menu.anonymous.InvestorRecods = Investors
+master.menu.anonymous.list-company-record = Companies
+master.menu.anonymous.list-investor-records = Investors
 
 # master.menu.administrator ###################################################
 
@@ -41,10 +41,10 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-announcement = All announcements
 master.menu.administrator.create-announcement = Create announcement
 master.menu.administrator.spam = Customisation parameters
-master.menu.administrator.CreateInvestorRecods = Create investor
-master.menu.administrator.challenge-create = Create challenge
-master.menu.administrator.InvestorRecods = Investors
-master.menu.administrator.challenge-list = Challenges
+master.menu.administrator.create-investor-records = Create investor
+master.menu.administrator.create-challenge = Create challenge
+master.menu.administrator.list-investor-records = Investors
+master.menu.administrator.list-challenges = Challenges
 master.menu.administrator.list-company-record = Companies
 master.menu.administrator.create-company-record = Create company
 master.menu.administrator.list-commercial-banner = Commercial banners
@@ -55,22 +55,22 @@ master.menu.administrator.create-non-commercial-banner = Create non commercial b
 # master.menu.authenticated ########################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.request = Requests
+master.menu.authenticated.list-request = Requests
 master.menu.authenticated.list-announcement = Announcements
-master.menu.authenticated.list.company-record = Companies
-master.menu.authenticated.InvestorRecods = Investors
-master.menu.authenticated.challenge = Challenges
-master.menu.authenticated.offer = Offers
+master.menu.authenticated.list-company-record = Companies
+master.menu.authenticated.list-investor-records = Investors
+master.menu.authenticated.list-challenge = Challenges
+master.menu.authenticated.list-offer = Offers
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
-master.menu.provider.request = Create request
+master.menu.provider.create-request = Create request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.offer = Create offer
+master.menu.consumer.create-offer = Create offer
 
 # master.menu.user-account ####################################################
 
