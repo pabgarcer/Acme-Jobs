@@ -402,7 +402,7 @@ Challenge
 Offer
 --
 + title: String {Not Blank}
-+ moment: Date{NotNull, Temporal(TIMESTAMP), Past}
++ moment: Date{Temporal(TIMESTAMP), Past}
 + deadline: Date{NotNull, Temporal(TIMESTAMP)}
 + text: String {Not Blank}
 + minMoney: Money {Valid, NotNull}
@@ -527,7 +527,7 @@ extends</panel_attributes>
 Request
 --
 + title: String {NotBlank}
-+ moment: Date {NotNull, Tempotal(TIMESTAMP), Past}
++ moment: Date {Tempotal(TIMESTAMP), Past}
 + deadline: Date {NotNull, Tempotal(TIMESTAMP)}
 + description: String {NotBlank}
 + reward: Money {NotNull, Valid}
