@@ -540,13 +540,14 @@ Request
       <x>1057</x>
       <y>525</y>
       <w>210</w>
-      <h>63</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Spam
 --
 + spam: String {NotBlank}
-+ threshold: double {NotNull, Range(0, 100)}</panel_attributes>
++ threshold: double {NotNull, Range(0, 100)}
+/+ threshold: String {Transient}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

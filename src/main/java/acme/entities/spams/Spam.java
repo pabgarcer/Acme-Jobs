@@ -1,6 +1,8 @@
 
 package acme.entities.spams;
 
+import java.beans.Transient;
+
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -26,6 +28,7 @@ public class Spam extends DomainEntity {
 	private double				threshold;
 
 
+	@Transient
 	public String threshold() {
 		StringBuilder res = new StringBuilder();
 		res.append(this.threshold);
