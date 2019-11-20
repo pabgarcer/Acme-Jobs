@@ -75,6 +75,11 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 
 		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
 		errors.state(request, !isDuplicateTicker, "ticker", "provider.request.error.duplicated");
+
+		if (!errors.hasErrors("reward")) {
+			boolean correctCurrency = entity.getReward().getCurrency().equals("EUR");
+			errors.state(request, correctCurrency, "reward", "provider.request.error.correct-currency");
+		}
 	}
 
 	@Override

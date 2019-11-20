@@ -26,3 +26,4 @@ consumer.offer.error.deadline = La fecha límite debe estar en futuro
 consumer.offer.error.duplicated = La etiqueta ya existe
 consumer.offer.error.range-money = La recompensa máxima tiene que ser mayor que la recompensa mínima
 consumer.offer.error.must-accept = Debe aceptar la licencia
+consumer.offer.error.correct-currency = Moneda inválida

@@ -29,3 +29,4 @@ administrator.challenge.list.label.deadline = Fecha límite
 administrator.offer.error.deadline = La fecha límite debe estar en futuro
 administrator.offer.error.range-money1 = La recompensa plata debe ser menor que la recompensa oro
 administrator.offer.error.range-money2 = La recompensa bronce debe ser menor que la recompensa plata
+administrator.challenge.error.correct-currency = Moneda inválida

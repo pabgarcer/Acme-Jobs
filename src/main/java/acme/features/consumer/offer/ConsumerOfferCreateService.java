@@ -80,6 +80,16 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			boolean correctRange = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
 			errors.state(request, correctRange, "maxMoney", "consumer.offer.error.range-money");
 		}
+
+		if (!errors.hasErrors("maxMoney")) {
+			boolean correctCurrencyMax = entity.getMaxMoney().getCurrency().equals("EUR");
+			errors.state(request, correctCurrencyMax, "maxMoney", "consumer.offer.error.correct-currency");
+		}
+
+		if (!errors.hasErrors("minMoney")) {
+			boolean correctCurrencyMin = entity.getMinMoney().getCurrency().equals("EUR");
+			errors.state(request, correctCurrencyMin, "minMoney", "consumer.offer.error.correct-currency");
+		}
 	}
 
 	@Override

@@ -61,7 +61,7 @@
 		<property name="description" value="This is the first request"/>
 		<property name="moment" value="2019/02/01 12:00"/>
 		<property name="deadline" value="2020/05/08 16:00"/>
-		<property name="reward" value="100€"/>
+		<property name="reward" value="100 EUR"/>
 		<property name="ticker" value="RABCD-12345"/>
 	</bean>
 	
@@ -70,7 +70,7 @@
 		<property name="description" value="This is the second request"/>
 		<property name="moment" value="2019/03/15 10:00"/>
 		<property name="deadline" value="2021/07/03 14:00"/>
-		<property name="reward" value="150€"/>
+		<property name="reward" value="150 EUR"/>
 		<property name="ticker" value="RHJLR-89347"/>
 	</bean>
 	
@@ -79,7 +79,7 @@
 		<property name="description" value="This is the third request"/>
 		<property name="moment" value="2019/02/01 08:00"/>
 		<property name="deadline" value="2020/05/08 20:00"/>
-		<property name="reward" value="200€"/>
+		<property name="reward" value="200 EUR"/>
 		<property name="ticker" value="RWLOA-46321"/>
 	</bean>
 	
@@ -88,7 +88,7 @@
 		<property name="description" value="This is the fourth request"/>
 		<property name="moment" value="2014/02/01 08:00"/>
 		<property name="deadline" value="2015/05/08 20:00"/>
-		<property name="reward" value="400€"/>
+		<property name="reward" value="400 EUR"/>
 		<property name="ticker" value="RPXGY-71301"/>
 	</bean>
 	
@@ -97,7 +97,7 @@
 		<property name="description" value="This is the fifth request"/>
 		<property name="moment" value="2018/02/01 08:00"/>
 		<property name="deadline" value="2018/05/08 20:00"/>
-		<property name="reward" value="700€"/>
+		<property name="reward" value="700 EUR"/>
 		<property name="ticker" value="RKMOQ-89261"/>
 	</bean>
 	
@@ -106,7 +106,7 @@
 		<property name="description" value="This is the sixth request"/>
 		<property name="moment" value="2019/11/01 07:00"/>
 		<property name="deadline" value="2019/12/25 22:00"/>
-		<property name="reward" value="600€"/>
+		<property name="reward" value="600 EUR"/>
 		<property name="ticker" value="RJBVA-96537"/>
 	</bean>
 	
@@ -209,9 +209,9 @@
 		<property name="title" value="Challenge 1"/>
 		<property name="description" value="This is the first challenge"/>
 		<property name="deadline" value="2019/12/27 14:00"/>
-		<property name="rewardGOLD" value="500€"/>
-		<property name="rewardSILVER" value="300€"/>
-		<property name="rewardBRONZE" value="100€"/>
+		<property name="rewardGOLD" value="500 EUR"/>
+		<property name="rewardSILVER" value="300 EUR"/>
+		<property name="rewardBRONZE" value="100 EUR"/>
 		<property name="goalGOLD" value="Goal GOLD"/>
 		<property name="goalSILVER" value="Goal SILVER"/>
 		<property name="goalBRONZE" value="Goal BRONZE"/>
@@ -221,9 +221,9 @@
 		<property name="title" value="Challenge 2"/>
 		<property name="description" value="This is the second challenge"/>
 		<property name="deadline" value="2019/11/05 09:00"/>
-		<property name="rewardGOLD" value="1000€"/>
-		<property name="rewardSILVER" value="700€"/>
-		<property name="rewardBRONZE" value="300€"/>
+		<property name="rewardGOLD" value="1000 EUR"/>
+		<property name="rewardSILVER" value="700 EUR"/>
+		<property name="rewardBRONZE" value="300 EUR"/>
 		<property name="goalGOLD" value="Goal GOLD"/>
 		<property name="goalSILVER" value="Goal SILVER"/>
 		<property name="goalBRONZE" value="Goal BRONZE"/>
@@ -233,9 +233,9 @@
 		<property name="title" value="Challenge 3"/>
 		<property name="description" value="This is the third challenge"/>
 		<property name="deadline" value="2019/11/15 14:00"/>
-		<property name="rewardGOLD" value="700€"/>
-		<property name="rewardSILVER" value="450€"/>
-		<property name="rewardBRONZE" value="200€"/>
+		<property name="rewardGOLD" value="700 EUR"/>
+		<property name="rewardSILVER" value="450 EUR"/>
+		<property name="rewardBRONZE" value="200 EUR"/>
 		<property name="goalGOLD" value="Goal GOLD"/>
 		<property name="goalSILVER" value="Goal SILVER"/>
 		<property name="goalBRONZE" value="Goal BRONZE"/>
@@ -245,9 +245,9 @@
 		<property name="title" value="Challenge 4"/>
 		<property name="description" value="This is the fourth challenge"/>
 		<property name="deadline" value="2018/09/15 11:00"/>
-		<property name="rewardGOLD" value="400€"/>
-		<property name="rewardSILVER" value="200€"/>
-		<property name="rewardBRONZE" value="50€"/>
+		<property name="rewardGOLD" value="400 EUR"/>
+		<property name="rewardSILVER" value="200 EUR"/>
+		<property name="rewardBRONZE" value="50 EUR"/>
 		<property name="goalGOLD" value="Goal GOLD"/>
 		<property name="goalSILVER" value="Goal SILVER"/>
 		<property name="goalBRONZE" value="Goal BRONZE"/>
@@ -257,9 +257,9 @@
 		<property name="title" value="Challenge 5"/>
 		<property name="description" value="This is the fifth challenge"/>
 		<property name="deadline" value="2019/12/10 07:00"/>
-		<property name="rewardGOLD" value="300€"/>
-		<property name="rewardSILVER" value="200€"/>
-		<property name="rewardBRONZE" value="100€"/>
+		<property name="rewardGOLD" value="300 EUR"/>
+		<property name="rewardSILVER" value="200 EUR"/>
+		<property name="rewardBRONZE" value="100 EUR"/>
 		<property name="goalGOLD" value="Goal GOLD"/>
 		<property name="goalSILVER" value="Goal SILVER"/>
 		<property name="goalBRONZE" value="Goal BRONZE"/>
@@ -272,8 +272,8 @@
 		<property name= "moment" value= "2019/08/16 12:00"/>
 		<property name= "deadline" value= "2018/11/25 10:00"/>
 		<property name= "text" value= "This is the first offer"/>
-		<property name= "minMoney" value= "20€"/>
-		<property name= "maxMoney" value= "100€"/>
+		<property name= "minMoney" value= "20 EUR"/>
+		<property name= "maxMoney" value= "100 EUR"/>
 		<property name= "ticker" value= "OMJUI-65540"/>
 	</bean>
 	
@@ -282,8 +282,8 @@
 		<property name= "moment" value= "2019/03/19 16:00"/>
 		<property name= "deadline" value= "2019/12/25 10:00"/>
 		<property name= "text" value= "This is another offer"/>
-		<property name= "minMoney" value= "500€"/>
-		<property name= "maxMoney" value= "1000€"/>
+		<property name= "minMoney" value= "500 EUR"/>
+		<property name= "maxMoney" value= "1000 EUR"/>
 		<property name= "ticker" value= "OIEMJ-46897"/>
 	</bean>
 	
@@ -292,8 +292,8 @@
 		<property name= "moment" value= "2019/01/10 18:00"/>
 		<property name= "deadline" value= "2019/11/30 10:00"/>
 		<property name= "text" value= "This is a great offer"/>
-		<property name= "minMoney" value= "10€"/>
-		<property name= "maxMoney" value= "200€"/>
+		<property name= "minMoney" value= "10 EUR"/>
+		<property name= "maxMoney" value= "200 EUR"/>
 		<property name= "ticker" value= "OQAMI-23046"/>
 	</bean>
 	
@@ -302,8 +302,8 @@
 		<property name= "moment" value= "2018/01/10 19:00"/>
 		<property name= "deadline" value= "2018/11/30 10:00"/>
 		<property name= "text" value= "This is a great offer"/>
-		<property name= "minMoney" value= "30€"/>
-		<property name= "maxMoney" value= "500€"/>
+		<property name= "minMoney" value= "30 EUR"/>
+		<property name= "maxMoney" value= "500 EUR"/>
 		<property name= "ticker" value= "OPLXX-50786"/>
 	</bean>
 	
@@ -312,8 +312,8 @@
 		<property name= "moment" value= "2019/01/10 10:00"/>
 		<property name= "deadline" value= "2020/08/14 10:00"/>
 		<property name= "text" value= "This is a great offer"/>
-		<property name= "minMoney" value= "70€"/>
-		<property name= "maxMoney" value= "900€"/>
+		<property name= "minMoney" value= "70 EUR"/>
+		<property name= "maxMoney" value= "900 EUR"/>
 		<property name= "ticker" value= "OOUYB-80671"/>
 	</bean>
 	

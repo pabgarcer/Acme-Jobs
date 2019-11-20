@@ -62,15 +62,36 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		Date dateNow = Date.from(Instant.now());
-		boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-		errors.state(request, deadlineAfterNow, "deadline", "administrator.offer.error.deadline");
+		if (!errors.hasErrors("deadline")) {
+			Date dateNow = Date.from(Instant.now());
+			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
+			errors.state(request, deadlineAfterNow, "deadline", "administrator.offer.error.deadline");
+		}
 
-		boolean correctRange1 = entity.getRewardGOLD().getAmount() > entity.getRewardSILVER().getAmount();
-		errors.state(request, correctRange1, "rewardSILVER", "administrator.offer.error.range-money1");
+		if (!errors.hasErrors("rewardSILVER") && !errors.hasErrors("rewardGOLD")) {
+			boolean correctRange1 = entity.getRewardGOLD().getAmount() > entity.getRewardSILVER().getAmount();
+			errors.state(request, correctRange1, "rewardSILVER", "administrator.offer.error.range-money1");
+		}
 
-		boolean correctRange2 = entity.getRewardSILVER().getAmount() > entity.getRewardBRONZE().getAmount();
-		errors.state(request, correctRange2, "rewardBRONZE", "administrator.offer.error.range-money2");
+		if (!errors.hasErrors("rewardSILVER") && !errors.hasErrors("rewardBRONZE")) {
+			boolean correctRange2 = entity.getRewardSILVER().getAmount() > entity.getRewardBRONZE().getAmount();
+			errors.state(request, correctRange2, "rewardBRONZE", "administrator.offer.error.range-money2");
+		}
+
+		if (!errors.hasErrors("rewardGOLD")) {
+			boolean correctCurrency = entity.getRewardGOLD().getCurrency().equals("EUR");
+			errors.state(request, correctCurrency, "rewardGOLD", "administrator.challenge.error.correct-currency");
+		}
+
+		if (!errors.hasErrors("rewardSILVER")) {
+			boolean correctCurrency = entity.getRewardSILVER().getCurrency().equals("EUR");
+			errors.state(request, correctCurrency, "rewardSILVER", "administrator.challenge.error.correct-currency");
+		}
+
+		if (!errors.hasErrors("rewardBRONZE")) {
+			boolean correctCurrency = entity.getRewardBRONZE().getCurrency().equals("EUR");
+			errors.state(request, correctCurrency, "rewardBRONZE", "administrator.challenge.error.correct-currency");
+		}
 
 	}
 

@@ -29,3 +29,4 @@ administrator.challenge.list.label.deadline = Deadline
 administrator.offer.error.deadline = Deadline must be in the future
 administrator.offer.error.range-money1 = The silver reward must be smaller than the gold reward
 administrator.offer.error.range-money2 = The bronze reward must be smaller than the silver reward
+administrator.challenge.error.correct-currency = Invalid currency

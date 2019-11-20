@@ -26,3 +26,4 @@ provider.request.list.label.deadline = Deadline
 provider.request.error.deadline = Deadline must be in the future
 provider.request.error.duplicated = Ticker is already taken
 provider.request.error.must-accept = Must accept the licence
+provider.request.error.correct-currency = Invalid currency
