@@ -534,4 +534,19 @@ Request
 + ticker: String {Unique, NotBlank, Pattern("[R][A-Z]{4}-[0-9]{5}")}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1057</x>
+      <y>525</y>
+      <w>210</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Spam
+--
++ spam: String {NotBlank}
++ threshold: double {NotNull, Range(0, 100)}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
