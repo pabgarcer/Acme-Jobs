@@ -65,20 +65,20 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 		assert errors != null;
 
 		boolean isAccepted = request.getModel().getBoolean("accept");
-		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
+		errors.state(request, isAccepted, "accept", "consumer.offer.error.must-accept");
 
 		if (!errors.hasErrors("deadline")) {
 			Date dateNow = Date.from(Instant.now());
 			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-			errors.state(request, deadlineAfterNow, "deadline", "authenticated.offer.error.deadline");
+			errors.state(request, deadlineAfterNow, "deadline", "consumer.offer.error.deadline");
 		}
 
 		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
-		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.offer.error.duplicated");
+		errors.state(request, !isDuplicateTicker, "ticker", "consumer.offer.error.duplicated");
 
 		if (!errors.hasErrors("maxMoney") && !errors.hasErrors("minMoney")) {
 			boolean correctRange = entity.getMaxMoney().getAmount() > entity.getMinMoney().getAmount();
-			errors.state(request, correctRange, "maxMoney", "authenticated.offer.error.range-money");
+			errors.state(request, correctRange, "maxMoney", "consumer.offer.error.range-money");
 		}
 	}
 

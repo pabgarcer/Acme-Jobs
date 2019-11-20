@@ -65,16 +65,16 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 		assert errors != null;
 
 		boolean isAccepted = request.getModel().getBoolean("accept");
-		errors.state(request, isAccepted, "accept", "authenticated.request.error.must-accept");
+		errors.state(request, isAccepted, "accept", "provider.request.error.must-accept");
 
 		if (!errors.hasErrors("deadline")) {
 			Date dateNow = Date.from(Instant.now());
 			boolean deadlineAfterNow = entity.getDeadline().after(dateNow);
-			errors.state(request, deadlineAfterNow, "deadline", "authenticated.request.error.deadline");
+			errors.state(request, deadlineAfterNow, "deadline", "provider.request.error.deadline");
 		}
 
 		boolean isDuplicateTicker = this.repository.findTickers(entity.getTicker()) != null;
-		errors.state(request, !isDuplicateTicker, "ticker", "authenticated.request.error.duplicated");
+		errors.state(request, !isDuplicateTicker, "ticker", "provider.request.error.duplicated");
 	}
 
 	@Override
